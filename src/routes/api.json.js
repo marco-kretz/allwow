@@ -47,10 +47,111 @@ const addonManagers = [
 	}
 ];
 
+const discordServers = [
+	{
+		class: 'Demonhunter (The Fel Hammer)',
+		icon: 'images/dh.png',
+		url: 'https://goo.gl/yDLlMY'
+	},
+	{
+		class: 'Druid (Dreamgrove)',
+		icon: 'images/druid.png',
+		url: 'https://goo.gl/VoRO6a'
+	},
+	{
+		class: 'Warlock (Council of the Black Harvest)',
+		icon: 'images/warlock.png',
+		url: 'https://goo.gl/sJCfF9'
+	},
+	{
+		class: 'Hunter (Trueshot Lodge)',
+		icon: 'images/hunter.png',
+		url: 'https://goo.gl/lJdmwp'
+	},
+	{
+		class: 'Warrior',
+		icon: 'images/warrior.png',
+		url: 'https://goo.gl/jSMjpB'
+	},
+	{
+		class: 'Mage (Altered Time)',
+		icon: 'images/mage.png',
+		url: 'https://goo.gl/EcMW0x'
+	},
+	{
+		class: 'Monk (Peak of Serenity)',
+		icon: 'images/monk.png',
+		url: 'https://goo.gl/VoRO6a'
+	},
+	{
+		class: 'Paladin (Hammer of Wrath)',
+		icon: 'images/pala.png',
+		url: 'https://goo.gl/VoRO6a'
+	},
+	{
+		class: 'Priest (Warcraft Priests)',
+		icon: 'images/priest.png',
+		url: 'https://goo.gl/VoRO6a'
+	},
+	{
+		class: 'Shaman (Earthshrine)',
+		icon: 'images/shaman.png',
+		url: 'https://goo.gl/VoRO6a'
+	},
+	{
+		class: 'Rogue (Ravenholdt)',
+		icon: 'images/rogue.png',
+		url: 'https://goo.gl/VoRO6a'
+	},
+	{
+		class: 'Deathknight (Acherus)',
+		icon: 'images/dk.png',
+		url: 'https://goo.gl/VoRO6a'
+	}
+];
+
+const generalWebsites = [
+	{
+		title: 'Wowhead',
+		description: '#1 Source for WoW News, Guids, etc.',
+		url: 'https://www.wowhead.com',
+		image: 'https://wow.zamimg.com/images/logos/horizontal/wowhead.webp'
+	},
+	{
+		title: 'Icy Veins',
+		description: 'News & Guides',
+		url: 'https://www.icy-veins.com/',
+		image: 'https://static.icy-veins.com/images/common/logo.png'
+	},
+	{
+		title: 'Raider.IO',
+		description: 'Rankings for Mythic+ & Raids',
+		url: 'https://raider.io',
+		image: 'https://cdnassets.raider.io/images/brand/Logo_2ColorWhite.svg'
+	},
+	{
+		title: 'WoWProgress',
+		description: 'Rankings for Mythic+ & Raids, find Guilds & Members',
+		url: 'https://www.wowprogress.com'
+	},
+	{
+		title: 'Mythic Trap',
+		description: 'Detailed Guides for Dungeons & Raids',
+		url: 'https://mythictrap.com/'
+	},
+	{
+		title: 'Subcreation',
+		description: 'Tier lists & Top builds',
+		url: 'https://mplus.subcreation.net'
+	}
+];
+
 export async function get() {
 	return {
 		body: {
-			addonManagers
+			addonManagers,
+			discordServers,
+			generalWebsites
 		}
 	};
 }

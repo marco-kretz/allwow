@@ -5,7 +5,11 @@ const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		adapter: static_adapter()
+		adapter: static_adapter(),
+		paths: {
+			base: '/allwow',
+			assets: '/allwow'
+		}
 	}
 };
 

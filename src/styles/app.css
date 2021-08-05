@@ -13,3 +13,14 @@ ul {
 	text-align: left;
 	padding: 0;
 }
+
+img.class-icon {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+
+span.site-title {
+	font-size: 1.6rem;
+	font-weight: bold;
+}

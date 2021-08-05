@@ -2,6 +2,10 @@
     import "../styles/app.css";
 </script>
 
+<svelte:head>
+    <title>ALLWOW</title>
+</svelte:head>
+
 <header>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
