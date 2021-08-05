@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-7a81993f.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-456d1ef4.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-293762bb.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-2e9f8267.js">
+		<link rel="stylesheet" href="/./_app/assets/start-8077b9bf.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-c9daeefc.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-7a81993f.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-293762bb.js"),
+						import("/./_app/pages/index.svelte-2e9f8267.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header><nav class="navbar navbar-dark bg-dark"><div class="container-fluid"><a class="navbar-brand" href="#">ALLWOW</a></div></nav></header>
+
+<main class="pt-4"><div class="container"><h2>AddOn-Manager</h2>
+
+<div class="row gx-3 gy-3"><div class="col-4"><div class="card"><div class="card-body"><h5 class="card-title">Ajour</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.getajour.com" class="btn btn-primary" ref="noopener" target="_blank">Download</a>
+                </div></div>
+        </div><div class="col-4"><div class="card"><div class="card-body"><h5 class="card-title">CurseForge</h5>
+                    <p class="card-text"></p>
+                    <a href="https://download.curseforge.com" class="btn btn-primary" ref="noopener" target="_blank">Download</a>
+                </div></div>
+        </div><div class="col-4"><div class="card"><div class="card-body"><h5 class="card-title">Minion</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.minion.gg" class="btn btn-primary" ref="noopener" target="_blank">Download</a>
+                </div></div>
+        </div><div class="col-4"><div class="card"><div class="card-body"><h5 class="card-title">Wago App</h5>
+                    <p class="card-text"></p>
+                    <a href="https://addons.wago.io" class="btn btn-primary" ref="noopener" target="_blank">Download</a>
+                </div></div>
+        </div><div class="col-4"><div class="card"><div class="card-body"><h5 class="card-title">WowUp</h5>
+                    <p class="card-text"></p>
+                    <a href="https://wowup.io" class="btn btn-primary" ref="noopener" target="_blank">Download</a>
+                </div></div>
+        </div></div></div></main>
+
+<footer></footer>
+
+
+
+	<script type="application/json" data-type="svelte-data" data-url="/api.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"addonManagers\":[{\"name\":\"Ajour\",\"url\":\"https:\u002F\u002Fwww.getajour.com\",\"image\":\"\",\"description\":\"\"},{\"name\":\"CurseForge\",\"url\":\"https:\u002F\u002Fdownload.curseforge.com\",\"image\":\"\",\"description\":\"\"},{\"name\":\"Minion\",\"url\":\"https:\u002F\u002Fwww.minion.gg\",\"image\":\"\",\"description\":\"\"},{\"name\":\"Wago App\",\"url\":\"https:\u002F\u002Faddons.wago.io\",\"image\":\"\",\"description\":\"\"},{\"name\":\"WowUp\",\"url\":\"https:\u002F\u002Fwowup.io\",\"image\":\"\",\"description\":\"\"}]}"}</script>
+</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	</body>
+</html>
