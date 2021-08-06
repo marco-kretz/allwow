@@ -49,63 +49,14 @@ const addonManagers = [
 
 const discordServers = [
 	{
-		class: 'Demonhunter (The Fel Hammer)',
-		icon: 'images/dh.png',
-		url: 'https://goo.gl/yDLlMY'
-	},
-	{
-		class: 'Druid (Dreamgrove)',
-		icon: 'images/druid.png',
-		url: 'https://goo.gl/VoRO6a'
-	},
-	{
-		class: 'Warlock (Council of the Black Harvest)',
-		icon: 'images/warlock.png',
-		url: 'https://goo.gl/sJCfF9'
-	},
-	{
-		class: 'Hunter (Trueshot Lodge)',
-		icon: 'images/hunter.png',
-		url: 'https://goo.gl/lJdmwp'
-	},
-	{
 		class: 'Warrior',
 		icon: 'images/warrior.png',
 		url: 'https://goo.gl/jSMjpB'
 	},
-	{
-		class: 'Mage (Altered Time)',
-		icon: 'images/mage.png',
-		url: 'https://goo.gl/EcMW0x'
-	},
-	{
-		class: 'Monk (Peak of Serenity)',
-		icon: 'images/monk.png',
-		url: 'https://goo.gl/VoRO6a'
-	},
-	{
-		class: 'Paladin (Hammer of Wrath)',
-		icon: 'images/pala.png',
-		url: 'https://goo.gl/VoRO6a'
-	},
-	{
-		class: 'Priest (Warcraft Priests)',
-		icon: 'images/priest.png',
-		url: 'https://goo.gl/VoRO6a'
-	},
+
 	{
 		class: 'Shaman (Earthshrine)',
 		icon: 'images/shaman.png',
-		url: 'https://goo.gl/VoRO6a'
-	},
-	{
-		class: 'Rogue (Ravenholdt)',
-		icon: 'images/rogue.png',
-		url: 'https://goo.gl/VoRO6a'
-	},
-	{
-		class: 'Deathknight (Acherus)',
-		icon: 'images/dk.png',
 		url: 'https://goo.gl/VoRO6a'
 	}
 ];
@@ -159,12 +110,103 @@ const generalWebsites = [
 	}
 ];
 
+const classSpecifics = [
+	{
+		class: 'Demonhunter',
+		icon: 'images/dh.png',
+		links: [{ title: 'The Fel Hammer Discord', url: 'https://discord.com/invite/zGGkNGC' }]
+	},
+	{
+		class: 'Deathknight',
+		icon: 'images/dk.png',
+		links: [{ title: 'Acherus', url: 'https://discord.com/invite/acherus' }]
+	},
+	{
+		class: 'Druid',
+		icon: 'images/druid.png',
+		links: [
+			{ title: 'Dreamgrove Discord', url: 'https://discord.com/invite/8mkvGCV' },
+			{ title: 'Dreamgrove Website', url: 'https://www.dreamgrove.gg/' },
+			{ title: 'Questionably Epic (Restoration)', url: 'https://questionablyepic.com/' }
+		]
+	},
+	{
+		class: 'Hunter',
+		icon: 'images/hunter.png',
+		links: [{ title: 'Trueshot Lodge Discord', url: 'https://discord.com/invite/fsgVNTv' }]
+	},
+	{
+		class: 'Mage',
+		icon: 'images/mage.png',
+		links: [
+			{ title: 'Altered-Time Discord', url: 'https://discord.com/invite/0gLMHikX2aZ23VdA' },
+			{ title: 'Altered-Time Forum', url: 'https://www.altered-time.com/forum/' }
+		]
+	},
+	{
+		class: 'Monk',
+		icon: 'images/monk.png',
+		links: [
+			{ title: 'Peak of Serenity Discord', url: 'http://www.discord.gg/peakofserenity' },
+			{ title: 'Peak of Serenity Website', url: 'https://www.peakofserenity.com' },
+			{ title: 'Questionably Epic (Mistweaver)', url: 'https://questionablyepic.com/' }
+		]
+	},
+	{
+		class: 'Paladin',
+		icon: 'images/pala.png',
+		links: [
+			{ title: 'Hammer of Wrath Discord', url: 'https://discord.com/invite/hammerofwrath' },
+			{ title: 'WingsIsUp (Holy)', url: 'https://wingsisup.com/' },
+			{ title: 'Retpaladin.xyz (Retribution)', url: 'https://www.retpaladin.xyz/' }
+		]
+	},
+	{
+		class: 'Priest',
+		icon: 'images/priest.png',
+		links: [
+			{ title: 'Warcraft Priests Discord', url: 'https://discord.com/invite/WarcraftPriests' },
+			{ title: 'Warcraft Priests Website', url: 'https://warcraftpriests.com/' },
+			{ title: 'Focused Will Discord', url: 'https://discord.com/invite/MSCyp6B' }
+		]
+	},
+	{
+		class: 'Rogue',
+		icon: 'images/rogue.png',
+		links: [
+			{ title: 'Ravenholdt Discord', url: 'https://discord.com/invite/mnwuJ7e' },
+			{ title: 'Ravenholdt Website', url: 'http://www.ravenholdt.net/' }
+		]
+	},
+	{
+		class: 'Shaman',
+		icon: 'images/shaman.png',
+		links: [{ title: 'Earthshrine Discord', url: 'https://discord.com/invite/0VcupJEQX0HuE5HH' }]
+	},
+	{
+		class: 'Warlock',
+		icon: 'images/warlock.png',
+		links: [
+			{
+				title: 'Council of the Black Harvest Discord',
+				url: 'https://discord.com/invite/0onXDymd9Wpc2CEu'
+			}
+		]
+	},
+	{
+		class: 'Warrior',
+		icon: 'images/warrior.png',
+		links: [{ title: 'Discord', url: '' }]
+	}
+];
+
 export async function get() {
 	return {
 		body: {
 			addonManagers,
 			discordServers,
-			generalWebsites
+			generalWebsites,
+			classSpecifics
 		}
 	};
 }

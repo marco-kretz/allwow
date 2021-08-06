@@ -16,7 +16,11 @@
 	export let data;
 </script>
 
-<div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+<div class="alert alert-warning text-center" role="alert">
+	Hey there!<br />
+	<strong>ALLWOW</strong> is a collection of ressources for World of Warcraft. Everything you need, all
+	in one place.
+</div>
 
 <h2 class="text-white text-center mb-4" id="addon-managers">Addon Managers</h2>
 <div class="row g-3">
@@ -60,24 +64,7 @@
 </div>
 
 <div class="row g-3">
-	<div class="col-6 col-md-4">
-		<h2 class="text-white text-center m-4" id="discord-servers">Discord Servers</h2>
-		<div class="list-group text-white bg-dark">
-			{#each data.discordServers as server}
-				<a
-					href={server.url}
-					class="list-group-item list-group-item-action bg-dark text-white"
-					rel="noopener nofollow"
-					target="_blank"
-					title="Visit discord"
-				>
-					<img src={server.icon} class="class-icon" />
-					{server.class}
-				</a>
-			{/each}
-		</div>
-	</div>
-
+	<!-- General Websites -->
 	<div class="col-6 col-md-4">
 		<h2 class="text-white text-center m-4" id="discord-servers">General Websites</h2>
 		<div class="list-group text-white bg-dark">
@@ -90,13 +77,57 @@
 					title="Visit website"
 				>
 					{#if site.image}
-						<img src={site.image} class="d-block" height="40px" width="auto" />
+						<img src={site.image} class="d-block" height="40px" width="auto" alt="Website Icon" />
 					{:else}
 						<span class="d-block site-title">{site.title}</span>
 					{/if}
 
 					{site.description}
 				</a>
+			{/each}
+		</div>
+	</div>
+
+	<!-- Class Specifics -->
+	<div class="col-6 col-md-4">
+		<h2 class="text-white text-center m-4" id="discord-servers">Class Specific</h2>
+		<div class="accordion" id="accordionExample">
+			{#each data.classSpecifics as specific}
+				<div class="accordion-item bg-dark text-white">
+					<h2 class="accordion-header" id="headingOne">
+						<button
+							class="accordion-button bg-dark text-white"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#class-collapse-{specific.class}"
+							aria-controls="class-collapse-{specific.class}"
+						>
+							<img src={specific.icon} class="class-icon" alt="{specific.class} Icon" />
+							{specific.class}
+						</button>
+					</h2>
+					<div
+						id="class-collapse-{specific.class}"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample"
+					>
+						<div class="accordion-body">
+							<div class="list-group">
+								{#each specific.links as link}
+									<a
+										href={link.url}
+										class="list-group-item list-group-item-action"
+										rel="noopener"
+										target="_blank"
+									>
+										{link.title}
+									</a>
+								{/each}
+							</div>
+						</div>
+					</div>
+				</div>
 			{/each}
 		</div>
 	</div>
