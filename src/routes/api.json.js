@@ -130,6 +130,12 @@ const generalWebsites = [
 		image: 'https://cdnassets.raider.io/images/brand/Logo_2ColorWhite.svg'
 	},
 	{
+		title: 'Raidbots',
+		description: 'Find the best Gear for you Character',
+		url: 'https://www.raidbots.com/simbot',
+		image: '/images/raidbots.png'
+	},
+	{
 		title: 'WoWProgress',
 		description: 'Rankings for Mythic+ & Raids, find Guilds & Members',
 		url: 'https://www.wowprogress.com'
