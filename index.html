@@ -12,19 +12,19 @@
 
 		
 
-		<link rel="modulepreload" href="/allwow/_app/start-bf1748bd.js">
-		<link rel="modulepreload" href="/allwow/_app/chunks/vendor-e3d002c9.js">
-		<link rel="modulepreload" href="/allwow/_app/chunks/paths-45dac81d.js">
-		<link rel="modulepreload" href="/allwow/_app/pages/__layout.svelte-67cb56d2.js">
-		<link rel="modulepreload" href="/allwow/_app/pages/index.svelte-cbf9ae92.js">
-		<link rel="stylesheet" href="/allwow/_app/assets/start-8077b9bf.css">
-		<link rel="stylesheet" href="/allwow/_app/assets/pages/__layout.svelte-3f1a2ade.css">
+		<link rel="modulepreload" href="/./_app/start-bf574463.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-e3d002c9.js">
+		<link rel="modulepreload" href="/./_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-1ac732da.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-e67c7c0c.js">
+		<link rel="stylesheet" href="/./_app/assets/start-8077b9bf.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-1b4f5342.css">
 
 		<script type="module">
-			import { start } from "/allwow/_app/start-bf1748bd.js";
+			import { start } from "/./_app/start-bf574463.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"/allwow","assets":"/allwow"},
+				paths: {"base":"","assets":"/."},
 				session: {},
 				host: location.host,
 				route: true,
@@ -34,8 +34,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/allwow/_app/pages/__layout.svelte-67cb56d2.js"),
-						import("/allwow/_app/pages/index.svelte-cbf9ae92.js")
+						import("/./_app/pages/__layout.svelte-1ac732da.js"),
+						import("/./_app/pages/index.svelte-e67c7c0c.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -55,86 +55,169 @@
 
 <header><nav class="navbar navbar-dark bg-dark"><div class="container-fluid"><a class="navbar-brand" href="#">ALLWOW</a></div></nav></header>
 
-<main class="pt-4"><div class="container"><h2 class="text-white text-center mb-4" id="addon-managers">Addon Managers</h2>
-<div class="row g-3"><div class="col-6 col-md-3"><div class="card text-white bg-dark"><img src="https://uploads-ssl.webflow.com/5f6386ad54bb290e47450199/5f75c250dd86beac36cffd9d_ajour.png" class="card-img-top manager-logo p-2" style="background-color: #211510" height="70px" width="auto" alt="...">
-                <div class="card-body"><h5 class="card-title text-center">Ajour</h5>
-                    <ul><li>✔️ Ultra leightweight</li><li>✔️ Open source</li><li>✔️ Additional addon providers</li><li>✔️ wago.io support</li><li>✔️ Install from URL</li><li>✔️ Customizable</li>
-                        </ul>
+<main class="pt-4"><div class="container"><div class="alert alert-warning text-center" role="alert">Hey there!<br>
+	<strong>ALLWOW</strong> is a collection of ressources for World of Warcraft. Everything you need, all
+	in one place.
+</div>
 
-                    <ul><li>❌ Weak browsing experience</li>
-                        </ul>
-                    <a href="https://www.getajour.com" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a>
-                </div></div>
-        </div><div class="col-6 col-md-3"><div class="card text-white bg-dark"><img src="https://www.curseforge.com/Content/2-0-7887-19616/Skins/CurseForge/images/anvil.svg" class="card-img-top manager-logo p-2" style="background-color: #0D0D0D" height="70px" width="auto" alt="...">
-                <div class="card-body"><h5 class="card-title text-center">CurseForge</h5>
-                    <ul><li>✔️ &quot;Official&quot; addon manager</li><li>✔️ Best browsing experience</li><li>✔️ Supports multiple games</li>
-                        </ul>
+<h2 class="text-white text-center mb-4" id="addon-managers">Addon Managers</h2>
+<div class="row g-3"><div class="col-6 col-md-3"><div class="card text-white bg-dark" style="height: 100%"><img src="https://uploads-ssl.webflow.com/5f6386ad54bb290e47450199/5f75c250dd86beac36cffd9d_ajour.png" class="card-img-top manager-logo p-2" style="background-color: #211510" height="70px" width="auto" alt="...">
+		<div class="card-body d-flex flex-column"><h5 class="card-title text-center">Ajour</h5>
+			<ul><li>✔️ Ultra leightweight</li><li>✔️ Open source</li><li>✔️ Additional addon providers</li><li>✔️ wago.io support</li><li>✔️ Install from URL</li><li>✔️ Customizable</li>
+				</ul>
 
-                    <ul><li>❌ Closed source</li><li>❌ Overwolf framework</li><li>❌ No additional addon sources</li>
-                        </ul>
-                    <a href="https://download.curseforge.com" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a>
-                </div></div>
-        </div><div class="col-6 col-md-3"><div class="card text-white bg-dark"><img src="https://addons.wago.io/images/wago-logo.svg" class="card-img-top manager-logo p-2" style="background-color: rgba(34,35,37,1)" height="70px" width="auto" alt="...">
-                <div class="card-body"><h5 class="card-title text-center">Wago App</h5>
-                    <ul><li>✔️ WeakAuras support</li><li>✔️ Supports addon devs</li><li>✔️ Recommendation system</li>
-                        </ul>
+			<ul><li>❌ Weak browsing experience</li>
+				</ul>
+			<div class="flex-fill d-flex flex-column justify-content-end"><a href="https://www.getajour.com" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a></div>
+		</div></div>
+</div><div class="col-6 col-md-3"><div class="card text-white bg-dark" style="height: 100%"><img src="https://www.curseforge.com/Content/2-0-7887-19616/Skins/CurseForge/images/anvil.svg" class="card-img-top manager-logo p-2" style="background-color: #0D0D0D" height="70px" width="auto" alt="...">
+		<div class="card-body d-flex flex-column"><h5 class="card-title text-center">CurseForge</h5>
+			<ul><li>✔️ &quot;Official&quot; addon manager</li><li>✔️ Best browsing experience</li><li>✔️ Supports multiple games</li>
+				</ul>
 
-                    <ul><li>❌ Currently in beta</li>
-                        </ul>
-                    <a href="https://addons.wago.io" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a>
-                </div></div>
-        </div><div class="col-6 col-md-3"><div class="card text-white bg-dark"><img src="https://wowup.io/assets/images/wowup_white_lg_nopad.png" class="card-img-top manager-logo p-2" style="background-color: #504fa1" height="70px" width="auto" alt="...">
-                <div class="card-body"><h5 class="card-title text-center">WowUp</h5>
-                    <ul><li>✔️ Easy to use</li><li>✔️ Open source</li><li>✔️ Companion Addon</li><li>✔️ Additional addon providers</li><li>✔️ Install from URL</li>
-                        </ul>
+			<ul><li>❌ Closed source</li><li>❌ Overwolf framework</li><li>❌ No additional addon sources</li>
+				</ul>
+			<div class="flex-fill d-flex flex-column justify-content-end"><a href="https://download.curseforge.com" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a></div>
+		</div></div>
+</div><div class="col-6 col-md-3"><div class="card text-white bg-dark" style="height: 100%"><img src="https://addons.wago.io/images/wago-logo.svg" class="card-img-top manager-logo p-2" style="background-color: rgba(34,35,37,1)" height="70px" width="auto" alt="...">
+		<div class="card-body d-flex flex-column"><h5 class="card-title text-center">Wago App</h5>
+			<ul><li>✔️ WeakAuras support</li><li>✔️ Supports addon devs</li><li>✔️ Recommendation system</li>
+				</ul>
 
-                    <ul><li>❌ Based on Electron</li>
-                        </ul>
-                    <a href="https://wowup.io" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a>
-                </div></div>
-        </div></div>
+			<ul><li>❌ Currently in beta</li>
+				</ul>
+			<div class="flex-fill d-flex flex-column justify-content-end"><a href="https://addons.wago.io" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a></div>
+		</div></div>
+</div><div class="col-6 col-md-3"><div class="card text-white bg-dark" style="height: 100%"><img src="https://wowup.io/assets/images/wowup_white_lg_nopad.png" class="card-img-top manager-logo p-2" style="background-color: #504fa1" height="70px" width="auto" alt="...">
+		<div class="card-body d-flex flex-column"><h5 class="card-title text-center">WowUp</h5>
+			<ul><li>✔️ Easy to use</li><li>✔️ Open source</li><li>✔️ Companion Addon</li><li>✔️ Additional addon providers</li><li>✔️ Install from URL</li>
+				</ul>
 
-<div class="row g-3"><div class="col-6 col-md-4"><h2 class="text-white text-center m-4" id="discord-servers">Discord Servers</h2>
-        <div class="list-group text-white bg-dark"><a href="https://goo.gl/yDLlMY" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/dh.png" class="class-icon"> Demonhunter (The Fel Hammer)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/druid.png" class="class-icon"> Druid (Dreamgrove)
-                </a><a href="https://goo.gl/sJCfF9" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/warlock.png" class="class-icon"> Warlock (Council of the Black Harvest)
-                </a><a href="https://goo.gl/lJdmwp" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/hunter.png" class="class-icon"> Hunter (Trueshot Lodge)
-                </a><a href="https://goo.gl/jSMjpB" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/warrior.png" class="class-icon"> Warrior
-                </a><a href="https://goo.gl/EcMW0x" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/mage.png" class="class-icon"> Mage (Altered Time)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/monk.png" class="class-icon"> Monk (Peak of Serenity)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/pala.png" class="class-icon"> Paladin (Hammer of Wrath)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/priest.png" class="class-icon"> Priest (Warcraft Priests)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/shaman.png" class="class-icon"> Shaman (Earthshrine)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/rogue.png" class="class-icon"> Rogue (Ravenholdt)
-                </a><a href="https://goo.gl/VoRO6a" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener nofollow" target="_blank" title="Visit discord"><img src="images/dk.png" class="class-icon"> Deathknight (Acherus)
-                </a></div></div>
+			<ul><li>❌ Based on Electron</li>
+				</ul>
+			<div class="flex-fill d-flex flex-column justify-content-end"><a href="https://wowup.io" class="btn btn-warning d-block" ref="noopener" target="_blank">Website</a></div>
+		</div></div>
+</div></div>
 
-    <div class="col-6 col-md-4"><h2 class="text-white text-center m-4" id="discord-servers">General Websites</h2>
-        <div class="list-group text-white bg-dark"><a href="https://www.wowhead.com" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="https://wow.zamimg.com/images/logos/horizontal/wowhead.webp" class="d-block" height="40px" width="auto">
+<div class="row g-3">
+	<div class="col-6 col-md-4"><h2 class="text-white text-center m-4" id="discord-servers">General Websites</h2>
+<div class="list-group text-white bg-dark"><a href="https://www.wowhead.com" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="https://wow.zamimg.com/images/logos/horizontal/wowhead.webp" class="d-block" height="40px" width="auto" alt="Website Icon">
 
-                    #1 Source for WoW News, Guids, etc.
-                </a><a href="https://www.icy-veins.com/" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="https://static.icy-veins.com/images/common/logo.png" class="d-block" height="40px" width="auto">
+			#1 Source for WoW News, Guids, etc.
+		</a><a href="https://www.icy-veins.com/" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="https://static.icy-veins.com/images/common/logo.png" class="d-block" height="40px" width="auto" alt="Website Icon">
 
-                    News &amp; Guides
-                </a><a href="https://raider.io" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="https://cdnassets.raider.io/images/brand/Logo_2ColorWhite.svg" class="d-block" height="40px" width="auto">
+			News &amp; Guides
+		</a><a href="https://raider.io" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="https://cdnassets.raider.io/images/brand/Logo_2ColorWhite.svg" class="d-block" height="40px" width="auto" alt="Website Icon">
 
-                    Rankings for Mythic+ &amp; Raids
-                </a><a href="https://www.wowprogress.com" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><span class="d-block site-title">WoWProgress</span>
+			Rankings for Mythic+ &amp; Raids
+		</a><a href="https://www.wowprogress.com" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><span class="d-block site-title">WoWProgress</span>
 
-                    Rankings for Mythic+ &amp; Raids, find Guilds &amp; Members
-                </a><a href="https://mythictrap.com/" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><span class="d-block site-title">Mythic Trap</span>
+			Rankings for Mythic+ &amp; Raids, find Guilds &amp; Members
+		</a><a href="https://www.raidbots.com/simbot" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="/images/raidbots.png" class="d-block" height="40px" width="auto" alt="Website Icon">
 
-                    Detailed Guides for Dungeons &amp; Raids
-                </a><a href="https://mplus.subcreation.net" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><span class="d-block site-title">Subcreation</span>
+			Find the best Gear for you Character
+		</a><a href="https://questionablyepic.com/live/" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><img src="data:image/png;base64,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" class="d-block" height="40px" width="auto" alt="Website Icon">
 
-                    Tier lists &amp; Top builds
-                </a></div></div></div></div></main>
+			Like Raidbots, but for Healers :)
+		</a><a href="https://mythictrap.com/" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><span class="d-block site-title">Mythic Trap</span>
+
+			Detailed Guides for Dungeons &amp; Raids
+		</a><a href="https://mplus.subcreation.net" class="list-group-item list-group-item-action bg-dark text-white" rel="noopener" target="_blank" title="Visit website"><span class="d-block site-title">Subcreation</span>
+
+			Tier lists &amp; Top builds
+		</a></div></div>
+
+	
+	<div class="col-6 col-md-4"><h2 class="text-white text-center m-4" id="discord-servers">Class Specific</h2>
+<div class="accordion" id="accordionExample"><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Demonhunter" aria-controls="class-collapse-Demonhunter"><img src="images/dh.png" class="class-icon" alt="Demonhunter Icon">
+					Demonhunter
+				</button></h2>
+			<div id="class-collapse-Demonhunter" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/zGGkNGC" class="list-group-item list-group-item-action" rel="noopener" target="_blank">The Fel Hammer Discord
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Deathknight" aria-controls="class-collapse-Deathknight"><img src="images/dk.png" class="class-icon" alt="Deathknight Icon">
+					Deathknight
+				</button></h2>
+			<div id="class-collapse-Deathknight" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/acherus" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Acherus
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Druid" aria-controls="class-collapse-Druid"><img src="images/druid.png" class="class-icon" alt="Druid Icon">
+					Druid
+				</button></h2>
+			<div id="class-collapse-Druid" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/8mkvGCV" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Dreamgrove Discord
+							</a><a href="https://www.dreamgrove.gg/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Dreamgrove Website
+							</a><a href="https://questionablyepic.com/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Questionably Epic (Restoration)
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Hunter" aria-controls="class-collapse-Hunter"><img src="images/hunter.png" class="class-icon" alt="Hunter Icon">
+					Hunter
+				</button></h2>
+			<div id="class-collapse-Hunter" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/fsgVNTv" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Trueshot Lodge Discord
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Mage" aria-controls="class-collapse-Mage"><img src="images/mage.png" class="class-icon" alt="Mage Icon">
+					Mage
+				</button></h2>
+			<div id="class-collapse-Mage" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/0gLMHikX2aZ23VdA" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Altered-Time Discord
+							</a><a href="https://www.altered-time.com/forum/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Altered-Time Forum
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Monk" aria-controls="class-collapse-Monk"><img src="images/monk.png" class="class-icon" alt="Monk Icon">
+					Monk
+				</button></h2>
+			<div id="class-collapse-Monk" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="http://www.discord.gg/peakofserenity" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Peak of Serenity Discord
+							</a><a href="https://www.peakofserenity.com" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Peak of Serenity Website
+							</a><a href="https://questionablyepic.com/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Questionably Epic (Mistweaver)
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Paladin" aria-controls="class-collapse-Paladin"><img src="images/pala.png" class="class-icon" alt="Paladin Icon">
+					Paladin
+				</button></h2>
+			<div id="class-collapse-Paladin" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/hammerofwrath" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Hammer of Wrath Discord
+							</a><a href="https://wingsisup.com/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">WingsIsUp (Holy)
+							</a><a href="https://www.retpaladin.xyz/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Retpaladin.xyz (Retribution)
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Priest" aria-controls="class-collapse-Priest"><img src="images/priest.png" class="class-icon" alt="Priest Icon">
+					Priest
+				</button></h2>
+			<div id="class-collapse-Priest" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/WarcraftPriests" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Warcraft Priests Discord
+							</a><a href="https://warcraftpriests.com/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Warcraft Priests Website
+							</a><a href="https://discord.com/invite/MSCyp6B" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Focused Will Discord
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Rogue" aria-controls="class-collapse-Rogue"><img src="images/rogue.png" class="class-icon" alt="Rogue Icon">
+					Rogue
+				</button></h2>
+			<div id="class-collapse-Rogue" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/mnwuJ7e" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Ravenholdt Discord
+							</a><a href="http://www.ravenholdt.net/" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Ravenholdt Website
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Shaman" aria-controls="class-collapse-Shaman"><img src="images/shaman.png" class="class-icon" alt="Shaman Icon">
+					Shaman
+				</button></h2>
+			<div id="class-collapse-Shaman" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/0VcupJEQX0HuE5HH" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Earthshrine Discord
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Warlock" aria-controls="class-collapse-Warlock"><img src="images/warlock.png" class="class-icon" alt="Warlock Icon">
+					Warlock
+				</button></h2>
+			<div id="class-collapse-Warlock" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="https://discord.com/invite/0onXDymd9Wpc2CEu" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Council of the Black Harvest Discord
+							</a></div>
+				</div></div>
+		</div><div class="accordion-item bg-dark text-white"><h2 class="accordion-header" id="headingOne"><button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#class-collapse-Warrior" aria-controls="class-collapse-Warrior"><img src="images/warrior.png" class="class-icon" alt="Warrior Icon">
+					Warrior
+				</button></h2>
+			<div id="class-collapse-Warrior" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"><div class="accordion-body"><div class="list-group"><a href="" class="list-group-item list-group-item-action" rel="noopener" target="_blank">Discord
+							</a></div>
+				</div></div>
+		</div></div></div></div></div></main>
 
 <footer></footer>
 
 
 
-	<script type="application/json" data-type="svelte-data" data-url="/allwow/api.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"addonManagers\":[{\"name\":\"Ajour\",\"url\":\"https:\u002F\u002Fwww.getajour.com\",\"image\":\"https:\u002F\u002Fuploads-ssl.webflow.com\u002F5f6386ad54bb290e47450199\u002F5f75c250dd86beac36cffd9d_ajour.png\",\"bgColor\":\"#211510\",\"pros\":[\"Ultra leightweight\",\"Open source\",\"Additional addon providers\",\"wago.io support\",\"Install from URL\",\"Customizable\"],\"cons\":[\"Weak browsing experience\"]},{\"name\":\"CurseForge\",\"url\":\"https:\u002F\u002Fdownload.curseforge.com\",\"image\":\"https:\u002F\u002Fwww.curseforge.com\u002FContent\u002F2-0-7887-19616\u002FSkins\u002FCurseForge\u002Fimages\u002Fanvil.svg\",\"bgColor\":\"#0D0D0D\",\"pros\":[\"\\\"Official\\\" addon manager\",\"Best browsing experience\",\"Supports multiple games\"],\"cons\":[\"Closed source\",\"Overwolf framework\",\"No additional addon sources\"]},{\"name\":\"Wago App\",\"url\":\"https:\u002F\u002Faddons.wago.io\",\"image\":\"https:\u002F\u002Faddons.wago.io\u002Fimages\u002Fwago-logo.svg\",\"bgColor\":\"rgba(34,35,37,1)\",\"pros\":[\"WeakAuras support\",\"Supports addon devs\",\"Recommendation system\"],\"cons\":[\"Currently in beta\"]},{\"name\":\"WowUp\",\"url\":\"https:\u002F\u002Fwowup.io\",\"image\":\"https:\u002F\u002Fwowup.io\u002Fassets\u002Fimages\u002Fwowup_white_lg_nopad.png\",\"bgColor\":\"#504fa1\",\"pros\":[\"Easy to use\",\"Open source\",\"Companion Addon\",\"Additional addon providers\",\"Install from URL\"],\"cons\":[\"Based on Electron\"]}],\"discordServers\":[{\"class\":\"Demonhunter (The Fel Hammer)\",\"icon\":\"images\u002Fdh.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FyDLlMY\"},{\"class\":\"Druid (Dreamgrove)\",\"icon\":\"images\u002Fdruid.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"},{\"class\":\"Warlock (Council of the Black Harvest)\",\"icon\":\"images\u002Fwarlock.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FsJCfF9\"},{\"class\":\"Hunter (Trueshot Lodge)\",\"icon\":\"images\u002Fhunter.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FlJdmwp\"},{\"class\":\"Warrior\",\"icon\":\"images\u002Fwarrior.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FjSMjpB\"},{\"class\":\"Mage (Altered Time)\",\"icon\":\"images\u002Fmage.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FEcMW0x\"},{\"class\":\"Monk (Peak of Serenity)\",\"icon\":\"images\u002Fmonk.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"},{\"class\":\"Paladin (Hammer of Wrath)\",\"icon\":\"images\u002Fpala.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"},{\"class\":\"Priest (Warcraft Priests)\",\"icon\":\"images\u002Fpriest.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"},{\"class\":\"Shaman (Earthshrine)\",\"icon\":\"images\u002Fshaman.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"},{\"class\":\"Rogue (Ravenholdt)\",\"icon\":\"images\u002Frogue.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"},{\"class\":\"Deathknight (Acherus)\",\"icon\":\"images\u002Fdk.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"}],\"generalWebsites\":[{\"title\":\"Wowhead\",\"description\":\"#1 Source for WoW News, Guids, etc.\",\"url\":\"https:\u002F\u002Fwww.wowhead.com\",\"image\":\"https:\u002F\u002Fwow.zamimg.com\u002Fimages\u002Flogos\u002Fhorizontal\u002Fwowhead.webp\"},{\"title\":\"Icy Veins\",\"description\":\"News & Guides\",\"url\":\"https:\u002F\u002Fwww.icy-veins.com\u002F\",\"image\":\"https:\u002F\u002Fstatic.icy-veins.com\u002Fimages\u002Fcommon\u002Flogo.png\"},{\"title\":\"Raider.IO\",\"description\":\"Rankings for Mythic+ & Raids\",\"url\":\"https:\u002F\u002Fraider.io\",\"image\":\"https:\u002F\u002Fcdnassets.raider.io\u002Fimages\u002Fbrand\u002FLogo_2ColorWhite.svg\"},{\"title\":\"WoWProgress\",\"description\":\"Rankings for Mythic+ & Raids, find Guilds & Members\",\"url\":\"https:\u002F\u002Fwww.wowprogress.com\"},{\"title\":\"Mythic Trap\",\"description\":\"Detailed Guides for Dungeons & Raids\",\"url\":\"https:\u002F\u002Fmythictrap.com\u002F\"},{\"title\":\"Subcreation\",\"description\":\"Tier lists & Top builds\",\"url\":\"https:\u002F\u002Fmplus.subcreation.net\"}]}"}</script>
+	<script type="application/json" data-type="svelte-data" data-url="/api.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"addonManagers\":[{\"name\":\"Ajour\",\"url\":\"https:\u002F\u002Fwww.getajour.com\",\"image\":\"https:\u002F\u002Fuploads-ssl.webflow.com\u002F5f6386ad54bb290e47450199\u002F5f75c250dd86beac36cffd9d_ajour.png\",\"bgColor\":\"#211510\",\"pros\":[\"Ultra leightweight\",\"Open source\",\"Additional addon providers\",\"wago.io support\",\"Install from URL\",\"Customizable\"],\"cons\":[\"Weak browsing experience\"]},{\"name\":\"CurseForge\",\"url\":\"https:\u002F\u002Fdownload.curseforge.com\",\"image\":\"https:\u002F\u002Fwww.curseforge.com\u002FContent\u002F2-0-7887-19616\u002FSkins\u002FCurseForge\u002Fimages\u002Fanvil.svg\",\"bgColor\":\"#0D0D0D\",\"pros\":[\"\\\"Official\\\" addon manager\",\"Best browsing experience\",\"Supports multiple games\"],\"cons\":[\"Closed source\",\"Overwolf framework\",\"No additional addon sources\"]},{\"name\":\"Wago App\",\"url\":\"https:\u002F\u002Faddons.wago.io\",\"image\":\"https:\u002F\u002Faddons.wago.io\u002Fimages\u002Fwago-logo.svg\",\"bgColor\":\"rgba(34,35,37,1)\",\"pros\":[\"WeakAuras support\",\"Supports addon devs\",\"Recommendation system\"],\"cons\":[\"Currently in beta\"]},{\"name\":\"WowUp\",\"url\":\"https:\u002F\u002Fwowup.io\",\"image\":\"https:\u002F\u002Fwowup.io\u002Fassets\u002Fimages\u002Fwowup_white_lg_nopad.png\",\"bgColor\":\"#504fa1\",\"pros\":[\"Easy to use\",\"Open source\",\"Companion Addon\",\"Additional addon providers\",\"Install from URL\"],\"cons\":[\"Based on Electron\"]}],\"discordServers\":[{\"class\":\"Warrior\",\"icon\":\"images\u002Fwarrior.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FjSMjpB\"},{\"class\":\"Shaman (Earthshrine)\",\"icon\":\"images\u002Fshaman.png\",\"url\":\"https:\u002F\u002Fgoo.gl\u002FVoRO6a\"}],\"generalWebsites\":[{\"title\":\"Wowhead\",\"description\":\"#1 Source for WoW News, Guids, etc.\",\"url\":\"https:\u002F\u002Fwww.wowhead.com\",\"image\":\"https:\u002F\u002Fwow.zamimg.com\u002Fimages\u002Flogos\u002Fhorizontal\u002Fwowhead.webp\"},{\"title\":\"Icy Veins\",\"description\":\"News & Guides\",\"url\":\"https:\u002F\u002Fwww.icy-veins.com\u002F\",\"image\":\"https:\u002F\u002Fstatic.icy-veins.com\u002Fimages\u002Fcommon\u002Flogo.png\"},{\"title\":\"Raider.IO\",\"description\":\"Rankings for Mythic+ & Raids\",\"url\":\"https:\u002F\u002Fraider.io\",\"image\":\"https:\u002F\u002Fcdnassets.raider.io\u002Fimages\u002Fbrand\u002FLogo_2ColorWhite.svg\"},{\"title\":\"WoWProgress\",\"description\":\"Rankings for Mythic+ & Raids, find Guilds & Members\",\"url\":\"https:\u002F\u002Fwww.wowprogress.com\"},{\"title\":\"Raidbots\",\"description\":\"Find the best Gear for you Character\",\"url\":\"https:\u002F\u002Fwww.raidbots.com\u002Fsimbot\",\"image\":\"\u002Fimages\u002Fraidbots.png\"},{\"title\":\"QE Live\",\"description\":\"Like Raidbots, but for Healers :)\",\"url\":\"https:\u002F\u002Fquestionablyepic.com\u002Flive\u002F\",\"image\":\"data:image\u002Fpng;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAkCAYAAABCKP5eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAi5SURBVHhe7ZppjBRFFMe7p2fnYgdYVmA5wiEiCOgoBkVFEwjKobggQb6AEglBEjB+URM8AA1+UGMMihqD8QwfRAlqEIgKBERCPFhuCLeRSwjssHPsdE9P+3\u002FVtUtfszOzMw27DL\u002FkTb2q6q7qqVf1qrq6RKHMyWQy\u002FRD00mMm0h6PZwfXbeC+CgQjIE5t+DdEhdwD0bg0I4riX5AUjzJQ3gAENRAqz1jmf3iOQ8i\u002FBXp3PYlhKtOBE7jvNNfLF03TlkBsoEHP8UscUVW1Gpc16lfbGIr7uyKM6VEzyCPDm0DyGj3Xxsc8f4UezQ\u002FU8Sbd56GfG5QejNBLCE7oMRsDeciAMSigEeoEeYOCQf13UXjDwC6BBk4j2KfHzCDvZq42EYbcpKtmMBj3crVQBqLj+Jt9\u002FZG1tUJlsMPkioqKu0UJ0wtElCSEEK8PulcQPRDERQlxr1fQJPQPNSNoiixoaYiqsFBgcQV5ipBMJnf3HLNylWiYVer27vUMGjBgps\u002Fny9ZrW00ikdgZDodX82hO0IBLELymx66AdJr7jHOeCXLRyD8F1a+nmBgGI+5DGa9Af0NPugLSv8C9s3iUyuqL+AGoQT2lGRXXdkHeZYQrEJ+tJ+eFgnv6s2bXFi0Szow6OCsUCKwQvT5J9MK4JMzIMHZT3CowuqamBU2WhYySgqF1IQNnyODQ03JKvRhNLrgQr\u002F9o5JPrhJ83bhSHDB78avdu3RbhwUvuQfCnUolEcmo4XLmWJ7UIrnfTwBOg\u002F6QnmdiG\u002FFFcp7pGItiux0zsxyiMSJKUxjWFGpjKfYQ18KmReyYHvN5PUCmGa2mRPKJUFZI+rAoEplN82JChz8K4S9wwLoH\u002F4A+FgrQiveaggY8gMK2WOabnw3VWl93EATIu17NBK+X3s0iCNXKgQhrhEUVa9ruCBFde6fc8SHqXqs73umTbNgc623EEUT1moitGJs27DFzXn6tWdvKwJY7i\u002FuecBO28jbnoC79MW+r1+hfSvEpzr6zK0+CazwgemoNp3m2af5GPNBYn90x6RmXzLROag1Waf9NCY1IdHg5Ky+CjWV48GV\u002Fea9x381Op1OeY559mjyYI9BoxBWFSj5aMY+j5Z7jeIqjfNRdNCsr5FcEY0g3Qa8xwPGMdi2japwieId0I0h9HHT9yPZuL3oq6HuK6M2Tg+s0ztOhvs7To9jna+a0zs\u002FWovDm4Ye7o6I55WvT32Vr9lqe0U+uf+IDSycD4c\u002FQHSS7hwTuwG64RqN+V92B+Gb0CvcfTrNTyfBH6Zj3JhIy85kUo4tneg7fwSxy5ir7SuDlTPmB0sVFqBYa5latwi0JPXTVBHYw8RFFcRQPn2lm7PoEhd3HVBAzfh4cBBLRdauUo3HPRU5d7BtasBi3PEQwOQZxW0oPoBx2A5nmnBa7jyC8UZuC4LCixVCYZa1STsWQ6mUhpbO+sOCwGtRm8bGiE7NdVE\u002F0xx1LYPF9byNfAFdRJLNKV5+kG7jtx1eLe41aGeo39KtRrzGehvmO\u002FPslyi8E6YI1bWWUE3GwGDU67VFY6I70zXHQPHjdC9zhuczpAmyRnjYJ7\u002F0DIYAZGT3oMsswg1Sy3GKwj1nkEB\u002FEw71jqLlhkWX6bl9cmgRGd3merkF6D\u002F38HjxtRIK3dg7aDRloKaXp1ISn+NWm99TVpqtNrUkkEBr7MKm0FaGBXX5MIlPUwT7dyP+RbXTWxh9\u002FaDNLy\u002FlyI+pq\u002FYl29VXSZumiO40ILtqBPenfqMRO7eVg0LhrY6qJLsG5rv9DcaNtZg4umT4TNCyID+WxR5oVrBrZPufYRjB4cP3vuHE0HlUUKHXVps2ChJSOgUWwC\u002F38aAusnQkq3uegW2AeXPMUouH8uz3PPwOidXOM4LLJwjdKjpuY8GiBejPh8vgQvsi1j2\u002FDA\u002F6e52voOTGe5CjHwRUmS1lhkA89zcwQ7rprLmXzd7j9ou4tcLxr35uCyXlPZgeukzQ4anbk4DK9EmyMlwT0DW9dYPCxX4I4PIsjHcDtt01sRuGZgr1ekl\u002FUrdi1zC2NU0kKLjNwiBS6wcuKagTOqQMd\u002FrnTF9jcni6qqdjJIZ4O0tt0cvywZIBde6A6WxJ\u002FP6TklZgDMD0sRLCSdQC+ivVPqcUbWYnX28tldL60Ldgj1YCc9PBJeb\u002FFMdJpDaTrNoZ\u002FsENR0sEL0DNTSskhpsVhsee+Jq60nOujUIM1NpX5JfgvPupLrLYL6HU90AHqm8xCrv4yive4jBaMy54kOI6hrAYJlesyRi7imP8q17cwhPduJDrITncG2Pidu0UawngjFdLALD3cbJGIR9v3SH+o4JBCuigQ7dokEO1WzMFBZFfFXdoogL+IPVkYC\u002Fg4Rny9IH7R5pRo6kUYuW1DVjLEuCeXebqmnaEG5jmeMC4Tahj7ldbOIjDqoQQsG7Zxrh+qkk3Fz4IM4PSe18yVm4JQsv4teuZV0N0gp6e1JJbOY9MsNlxcpiuL0daVU0FwQ11VXqIMRWutxyFuxjp6Fku1ggeN4zhgzcCgYjCqqOglGpgNidAzTSeohJjKqCg+dPk2iqeppRJigHAh0LXM6pSiborF47aAp37PThTXdu5+KxeLjFCX9J6JO9RQlGCV0gO1LiCug\u002FGIWQdQGx3TVkVxzdCGwzmLy27IsY+qik+6OqMhTLh1eejLUMdyHDr43RGMJUWmoZnMwHYDPoHOyuTgN40NHejKRSveb8I3tbG8ikfD6\u002FX46j1Rq6E\u002FkPcJgsGxzcDbGw0VvwAImr1OVRlAXyQ\u002FIm8STTCBvDMrcxKMmkFfQwXdcPwdlrbBOzDkxGbg+lqge8MI1PRVZLGiI+Qjm6bGcpOGdHkUH+hcG7oQG3Iw0mgOt1MKIdOjdBup7HsEcPWYGeQ+gTJunJJD3OoKpeiwnuFybgbLqijRwAwz8Yrs28PVOa9\u002FnbtBOKNzA5b7n2M4o2MBKY3y6HG8YLceio5VUYjxPvkGbRBD+B7rGeb89SS2GAAAAAElFTkSuQmCC\"},{\"title\":\"Mythic Trap\",\"description\":\"Detailed Guides for Dungeons & Raids\",\"url\":\"https:\u002F\u002Fmythictrap.com\u002F\"},{\"title\":\"Subcreation\",\"description\":\"Tier lists & Top builds\",\"url\":\"https:\u002F\u002Fmplus.subcreation.net\"}],\"classSpecifics\":[{\"class\":\"Demonhunter\",\"icon\":\"images\u002Fdh.png\",\"links\":[{\"title\":\"The Fel Hammer Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002FzGGkNGC\"}]},{\"class\":\"Deathknight\",\"icon\":\"images\u002Fdk.png\",\"links\":[{\"title\":\"Acherus\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002Facherus\"}]},{\"class\":\"Druid\",\"icon\":\"images\u002Fdruid.png\",\"links\":[{\"title\":\"Dreamgrove Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002F8mkvGCV\"},{\"title\":\"Dreamgrove Website\",\"url\":\"https:\u002F\u002Fwww.dreamgrove.gg\u002F\"},{\"title\":\"Questionably Epic (Restoration)\",\"url\":\"https:\u002F\u002Fquestionablyepic.com\u002F\"}]},{\"class\":\"Hunter\",\"icon\":\"images\u002Fhunter.png\",\"links\":[{\"title\":\"Trueshot Lodge Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002FfsgVNTv\"}]},{\"class\":\"Mage\",\"icon\":\"images\u002Fmage.png\",\"links\":[{\"title\":\"Altered-Time Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002F0gLMHikX2aZ23VdA\"},{\"title\":\"Altered-Time Forum\",\"url\":\"https:\u002F\u002Fwww.altered-time.com\u002Fforum\u002F\"}]},{\"class\":\"Monk\",\"icon\":\"images\u002Fmonk.png\",\"links\":[{\"title\":\"Peak of Serenity Discord\",\"url\":\"http:\u002F\u002Fwww.discord.gg\u002Fpeakofserenity\"},{\"title\":\"Peak of Serenity Website\",\"url\":\"https:\u002F\u002Fwww.peakofserenity.com\"},{\"title\":\"Questionably Epic (Mistweaver)\",\"url\":\"https:\u002F\u002Fquestionablyepic.com\u002F\"}]},{\"class\":\"Paladin\",\"icon\":\"images\u002Fpala.png\",\"links\":[{\"title\":\"Hammer of Wrath Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002Fhammerofwrath\"},{\"title\":\"WingsIsUp (Holy)\",\"url\":\"https:\u002F\u002Fwingsisup.com\u002F\"},{\"title\":\"Retpaladin.xyz (Retribution)\",\"url\":\"https:\u002F\u002Fwww.retpaladin.xyz\u002F\"}]},{\"class\":\"Priest\",\"icon\":\"images\u002Fpriest.png\",\"links\":[{\"title\":\"Warcraft Priests Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002FWarcraftPriests\"},{\"title\":\"Warcraft Priests Website\",\"url\":\"https:\u002F\u002Fwarcraftpriests.com\u002F\"},{\"title\":\"Focused Will Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002FMSCyp6B\"}]},{\"class\":\"Rogue\",\"icon\":\"images\u002Frogue.png\",\"links\":[{\"title\":\"Ravenholdt Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002FmnwuJ7e\"},{\"title\":\"Ravenholdt Website\",\"url\":\"http:\u002F\u002Fwww.ravenholdt.net\u002F\"}]},{\"class\":\"Shaman\",\"icon\":\"images\u002Fshaman.png\",\"links\":[{\"title\":\"Earthshrine Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002F0VcupJEQX0HuE5HH\"}]},{\"class\":\"Warlock\",\"icon\":\"images\u002Fwarlock.png\",\"links\":[{\"title\":\"Council of the Black Harvest Discord\",\"url\":\"https:\u002F\u002Fdiscord.com\u002Finvite\u002F0onXDymd9Wpc2CEu\"}]},{\"class\":\"Warrior\",\"icon\":\"images\u002Fwarrior.png\",\"links\":[{\"title\":\"Discord\",\"url\":\"\"}]}]}"}</script>
 </div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	</body>
